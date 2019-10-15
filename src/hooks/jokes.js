@@ -1,6 +1,4 @@
-import {useSelector, useDispatch} from 'react-redux'
-import {shuffleJokes} from '../utils'
-import {receivedJokes, updateStaleJokes} from '../ducks/jokes'
+import {useSelector} from 'react-redux'
 
 export const useIsLoading = () =>
     useSelector(({jokes: {fetchingJokes}}) => fetchingJokes)
